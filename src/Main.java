@@ -5,7 +5,7 @@ public class Main {
 
 //    Задача 1
 
-    public static void yearLear(int year){
+    public static void checkYearLear(int year){
         if (year % 4 == 0  && year % 100 != 0 || year % 400 == 0 && year % 100 != 0){
             System.out.println(year + " год является високосным");
         } else {
@@ -56,8 +56,8 @@ public class Main {
         System.out.println("");
         System.out.println("Задача 1");
 
-        int year = 2021;
-        yearLear(year);
+        int year = 1900;
+        checkYearLear(year);
 
 //        Задача 2
         System.out.println("");
@@ -73,7 +73,7 @@ public class Main {
         System.out.println("");
         System.out.println("Задача 3");
 
-        int deliveryDistance = 10;
+        int deliveryDistance = 100;
         int days = deliveryDays(deliveryDistance);
         if (deliveryDistance > 100){
             System.out.println("Доставки нет.");
